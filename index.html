@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QORA DON — Qo'lda qovurilgan qahva</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain-overlay"></div>
+
+<header class="nav">
+  <div class="nav__mark">
+    <svg width="28" height="34" viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14 1C6 1 9 1 17C1 26 6 33 14 33C22 33 27 26 27 17C27 9 22 1 14 1Z" stroke="currentColor" stroke-width="1.6"/>
+      <path d="M14 2C14 2 18 12 14 17C10 22 14 32 14 32" stroke="currentColor" stroke-width="1.6"/>
+    </svg>
+    <span>QORA DON</span>
+  </div>
+  <nav class="nav__links">
+    <a href="#jarayon">Jarayon</a>
+    <a href="#donlar">Donlar</a>
+    <a href="#profil">Qovurish profili</a>
+    <a href="#manzil">Manzil</a>
+  </nav>
+  <a href="#manzil" class="nav__cta">Bizga keling</a>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__text">
+      <p class="eyebrow">Qarshi shahridagi mikro-qovurish ustaxonasi</p>
+      <h1 class="hero__title">Har bir<br>don — <em>o'z</em><br>tarixi bilan.</h1>
+      <p class="hero__lede">Biz qahvani tonna-tonna emas, kilogramm-kilogramm qovuramiz. Har bir partiya qo'lda kuzatiladi, har bir egri chiziq — harorat jurnalida qayd etiladi.</p>
+      <div class="hero__actions">
+        <a href="#donlar" class="btn btn--solid">Donlarni ko'rish</a>
+        <a href="#profil" class="btn btn--ghost">Qovurish egri chizig'i ↓</a>
+      </div>
+    </div>
+    <div class="hero__bean">
+      <svg viewBox="0 0 320 400" class="bean-svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="beanGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#B5652B"/>
+            <stop offset="100%" stop-color="#3A1E10"/>
+          </linearGradient>
+        </defs>
+        <path id="beanShape" d="M160 10C90 10 20 100 20 200C20 300 90 390 160 390C230 390 300 300 300 200C300 100 230 10 160 10Z" fill="url(#beanGrad)"/>
+        <path d="M160 20C160 20 210 110 160 200C110 290 160 380 160 380" stroke="#F7F3EA" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.85"/>
+      </svg>
+      <span class="hero__tag">#017 · Efiopiya · Yirgacheffe</span>
+    </div>
+  </section>
+
+  <!-- JARAYON -->
+  <section class="process" id="jarayon">
+    <h2 class="section-title">Yashil dondan — chashkagacha</h2>
+    <ol class="process__list">
+      <li class="process__item">
+        <span class="process__num">01</span>
+        <h3>Tanlash</h3>
+        <p>Fermer bilan bevosita aloqa orqali eng sifatli yashil donlar tanlanadi — namlik va zichlik nazorat qilinadi.</p>
+      </li>
+      <li class="process__item">
+        <span class="process__num">02</span>
+        <h3>Qovurish</h3>
+        <p>8–12 daqiqa davomida harorat sekin ko'tariladi. Har bir bosqich — quritish, Meylard, birinchi chirsillash — kuzatiladi.</p>
+      </li>
+      <li class="process__item">
+        <span class="process__num">03</span>
+        <h3>Dam olish</h3>
+        <p>Qovurilgan donlar kamida 48 soat "nafas oladi" — gaz chiqib, ta'm barqarorlashadi.</p>
+      </li>
+      <li class="process__item">
+        <span class="process__num">04</span>
+        <h3>Maydalash</h3>
+        <p>Buyurtma tushgandan so'nggina maydalanadi — aromatning uchib ketishiga yo'l qo'yilmaydi.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- QOVURISH PROFILI - SIGNATURE ELEMENT -->
+  <section class="roast-profile" id="profil">
+    <div class="roast-profile__intro">
+      <h2 class="section-title section-title--light">Qovurish egri chizig'i</h2>
+      <p>Bu — #017 partiyasining haqiqiy harorat jurnali. Nuqtalarni bosing yoki ustidan o'ting.</p>
+    </div>
+    <div class="curve-wrap">
+      <svg id="curveSvg" viewBox="0 0 900 420" class="curve-svg">
+        <!-- grid -->
+        <g class="curve-grid" stroke="currentColor" stroke-width="1" opacity="0.12">
+          <line x1="60" y1="60" x2="60" y2="360"/>
+          <line x1="60" y1="360" x2="860" y2="360"/>
+          <line x1="60" y1="270" x2="860" y2="270"/>
+          <line x1="60" y1="180" x2="860" y2="180"/>
+          <line x1="60" y1="90" x2="860" y2="90"/>
+        </g>
+        <text x="30" y="365" class="axis-label">100°</text>
+        <text x="30" y="275" class="axis-label">150°</text>
+        <text x="30" y="185" class="axis-label">180°</text>
+        <text x="30" y="95" class="axis-label">210°C</text>
+        <text x="60" y="395" class="axis-label">0'</text>
+        <text x="860" y="395" class="axis-label" text-anchor="end">12'</text>
+
+        <path id="roastCurve" class="roast-curve-path" d="M60,360 C 200,330 320,260 420,190 C 520,130 620,95 720,75 C 780,65 830,58 860,55" />
+
+        <g id="roastPoints"></g>
+      </svg>
+      <div class="curve-detail" id="curveDetail">
+        <span class="curve-detail__stage">Nuqtani tanlang</span>
+        <p class="curve-detail__text">Egri chiziq bo'ylab har bir bosqich haqida ma'lumot olish uchun doiralarni bosing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DONLAR -->
+  <section class="beans" id="donlar">
+    <h2 class="section-title">Joriy partiyalar</h2>
+    <div class="beans__grid">
+      <article class="bean-card">
+        <span class="bean-card__code">№014</span>
+        <h3>Kolumbiya · Huila</h3>
+        <p class="bean-card__notes">Qora shokolad, olcha, yumshoq kislotalilik</p>
+        <div class="bean-card__meta">
+          <span>O'rta qovurish</span>
+          <span>1 750m</span>
+        </div>
+      </article>
+      <article class="bean-card bean-card--active">
+        <span class="bean-card__code">№017</span>
+        <h3>Efiopiya · Yirgacheffe</h3>
+        <p class="bean-card__notes">Bergamot, jasmin, limon po'stlog'i</p>
+        <div class="bean-card__meta">
+          <span>Och qovurish</span>
+          <span>1 980m</span>
+        </div>
+      </article>
+      <article class="bean-card">
+        <span class="bean-card__code">№011</span>
+        <h3>Braziliya · Serrado</h3>
+        <p class="bean-card__notes">Yong'oq, karamel, past kislotalilik</p>
+        <div class="bean-card__meta">
+          <span>To'q qovurish</span>
+          <span>1 100m</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- MANZIL -->
+  <section class="visit" id="manzil">
+    <h2 class="section-title section-title--light">Ustaxonaga tashrif buyuring</h2>
+    <div class="visit__grid">
+      <div class="visit__block">
+        <span class="visit__label">Manzil</span>
+        <p>Qarshi shahri, Mustaqillik ko'chasi</p>
+      </div>
+      <div class="visit__block">
+        <span class="visit__label">Ish vaqti</span>
+        <p>Har kuni, 08:00 – 20:00</p>
+      </div>
+      <div class="visit__block">
+        <span class="visit__label">Bog'lanish</span>
+        <p>Telegram: @qoradon_coffee</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>© 2026 QORA DON. Qo'lda qovurilgan, Qarshida.</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
